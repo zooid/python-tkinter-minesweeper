@@ -1,8 +1,8 @@
-# Python Version 2.7.3
+# Python Version 3.6.x
 # File: minesweeper.py
 
-from Tkinter import *
-import tkMessageBox
+from tkinter import *
+from tkinter import messagebox
 import random
 from collections import deque
 
@@ -192,12 +192,12 @@ class Minesweeper:
             self.check_tile(key+11, queue)     #bottom left
     
     def gameover(self):
-        tkMessageBox.showinfo("Game Over", "You Lose!")
+        messagebox.showinfo("Game Over", "You Lose!")
         global root
         root.destroy()
 
     def victory(self):
-        tkMessageBox.showinfo("Game Over", "You Win!")
+        messagebox.showinfo("Game Over", "You Win!")
         global root
         root.destroy()
 
